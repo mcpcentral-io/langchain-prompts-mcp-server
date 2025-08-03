@@ -1,0 +1,42 @@
+{
+  "_id": {
+    "$oid": "685aece6c25c122dd6304369"
+  },
+  "id": "2ad7c503-7daa-46c8-9295-8a1ed53271a7",
+  "name": "io.github.mcpcentral-io/langchain-prompts-mcp-server",
+  "description": "MCP server for LangChain prompts - fetch and manage prompts from LangChain Hub",
+  "repository": {
+    "url": "https://github.com/mcpcentral-io/langchain-prompts-mcp-server",
+    "source": "github",
+    "id": "895268757"
+  },
+  "version_detail": {
+    "version": "0.0.1-seed",
+    "release_date": "2025-07-10T00:00:00Z",
+    "is_latest": true
+  },
+  "packages": [
+    {
+      "registry_name": "npm",
+      "name": "@mcpcentral-io/langchain-prompts-mcp-server",
+      "version": "1.0.0",
+      "package_arguments": [
+        {
+          "description": "LangChain API key for accessing prompts",
+          "is_required": true,
+          "format": "string",
+          "value": "",
+          "default": "",
+          "type": "environment",
+          "value_hint": "LANGCHAIN_API_KEY"
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "transport_type": "http",
+      "url": "https://mcp.prompts.mcpcentral.io/mcp"
+    }
+  ]
+}
